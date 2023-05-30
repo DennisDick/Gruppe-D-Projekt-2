@@ -6,19 +6,32 @@
 
 class Developer
 {
-    private:
-        std::string developer_name_;
-        std::string developer_alias_;
+   private:
+    std::string developer_name_;
+    std::string developer_alias_;
 
-    public:
-        explicit Developer(std::string, std::string);
-        static void drink_coffee();
+   public:
+    explicit Developer(std::string, std::string);
+    static void drink_coffee();
 
-        auto get_developer_name() -> std::string;
-        auto get_developer_alias() -> std::string;
+    auto get_developer_name() -> std::string;
+    auto get_developer_alias() -> std::string;
 
-        virtual void solve_problem() = 0;
+    virtual void solve_problem() = 0;
+};
 
-}; 
+class JuniorDeveloper : public Developer
+{
+   public:
+    explicit JuniorDeveloper(std::string, std::string);
 
+    void solve_problem() override;
+};
+class SeniorDeveloper : public Developer
+{
+   public:
+    explicit SeniorDeveloper(std::string, std::string);
+
+    void solve_problem() override;
+};
 #endif
