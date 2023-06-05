@@ -13,6 +13,7 @@ auto main() -> int
     /*
         initializing vector which will be filled with shared pointer each pointing on a child class of Developer
     */
+   
     std::vector<std::shared_ptr<Developer>> vector_developer;
 
     /*
@@ -36,4 +37,5 @@ auto main() -> int
     }
 
     return 0;
+
 }
