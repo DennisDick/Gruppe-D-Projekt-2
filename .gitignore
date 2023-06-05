@@ -1,5 +1,5 @@
 *.out 
 wget-log
 build
-.vscode
+.vscode/settings.json
 *.json
