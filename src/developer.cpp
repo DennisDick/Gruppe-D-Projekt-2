@@ -22,3 +22,21 @@ auto Developer::get_developer_alias() -> std::string
 {
     return developer_alias_;
 };
+
+std::ostream& operator<<(std::ostream& out, Developer& developer)
+{
+    out << "Name: " << developer.get_developer_name() << std::endl;
+    out << "Alias: " << developer.get_developer_alias() << std::endl;
+    return out;
+}
+
+void JuniorDeveloper::solve_problem()
+{
+    std::cout << *this << "I am a junior developer and i am solving a problem" << std::endl;
+    Developer::drink_coffee();
+}
+void SeniorDeveloper::solve_problem()
+{
+    std::cout << *this << "I am a senior developer and i am solving a problem" << std::endl;
+    Developer::drink_coffee();
+}

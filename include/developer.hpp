@@ -6,7 +6,7 @@
 
 class Developer
 {
-   private:
+   private:  // private oder protected?
     std::string developer_name_;
     std::string developer_alias_;
 
@@ -34,4 +34,7 @@ class SeniorDeveloper : public Developer
 
     void solve_problem() override;
 };
+
+std::ostream& operator<<(std::ostream& out, const Developer&);
+
 #endif
