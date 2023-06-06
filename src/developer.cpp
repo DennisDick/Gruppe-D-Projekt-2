@@ -35,6 +35,18 @@ void JuniorDeveloper::solve_problem()
     std::cout << *this << "I am a junior developer and i am solving a problem" << std::endl;
     Developer::drink_coffee();
 }
+
+JuniorDeveloper::JuniorDeveloper(const std::string var_developer_name, const std::string var_developer_alias) : Developer(var_developer_name, var_developer_alias)
+{
+
+}
+
+SeniorDeveloper::SeniorDeveloper(const std::string var_developer_name, const std::string var_developer_alias) : Developer(var_developer_name, var_developer_alias)
+{
+
+}
+
+
 void SeniorDeveloper::solve_problem()
 {
     std::cout << *this << "I am a senior developer and i am solving a problem" << std::endl;

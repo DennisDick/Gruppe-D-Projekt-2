@@ -14,7 +14,7 @@ TEST_F(DeveloperTest, GetJunior) {
 }
 
 TEST_F(DeveloperTest, GetSenior) {
-    EXPECT_EQ(test_senior_developer_.get_developer_name(), "Test Junior");
+    EXPECT_EQ(test_senior_developer_.get_developer_name(), "Test Senior");
     EXPECT_EQ(test_senior_developer_.get_developer_alias(), "alias senior test");
 }
 
