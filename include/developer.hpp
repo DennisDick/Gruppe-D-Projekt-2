@@ -1,22 +1,28 @@
 #ifndef DEVELOPER_HPP_
 #define DEVELOPER_HPP_
 
-#include <cstdint>
 #include <iostream>
 
 class Developer
 {
-   protected:  
+   protected:
     std::string developer_name_;
     std::string developer_alias_;
 
    public:
+    /*
+         defining a explicit constructor which only allows strings as an input
+    */
     explicit Developer(std::string, std::string);
+
     static void drink_coffee();
 
     auto get_developer_name() -> std::string;
     auto get_developer_alias() -> std::string;
 
+    /*
+        using a virtual void function to force derived classes of Developer to implement that function
+    */
     virtual void solve_problem() = 0;
 };
 
@@ -27,6 +33,7 @@ class JuniorDeveloper : public Developer
 
     void solve_problem() override;
 };
+
 class SeniorDeveloper : public Developer
 {
    public:
