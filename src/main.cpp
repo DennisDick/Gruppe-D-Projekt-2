@@ -34,9 +34,9 @@ auto main() -> int
     /*
         iterator goes through vector and each object solves a problem
     */
-    for (auto &itr : vector_developer)
+    for (auto &itr_developer : vector_developer)
     {
-        itr->solve_problem();
+        itr_developer->solve_problem();
     }
 
     return 0;
