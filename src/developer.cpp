@@ -35,14 +35,14 @@ auto Developer::get_developer_alias() -> const std::string
 /*
     initializing constructors for derived classes
 */
-JuniorDeveloper::JuniorDeveloper(const std::string var_developer_name, const std::string var_developer_alias) : Developer(var_developer_name, var_developer_alias)
+JuniorDeveloper::JuniorDeveloper(const std::string var_developer_name, const std::string var_developer_alias)
+    : Developer(var_developer_name, var_developer_alias)
 {
-
 }
 
-SeniorDeveloper::SeniorDeveloper(const std::string var_developer_name, const std::string var_developer_alias) : Developer(var_developer_name, var_developer_alias)
+SeniorDeveloper::SeniorDeveloper(const std::string var_developer_name, const std::string var_developer_alias)
+    : Developer(var_developer_name, var_developer_alias)
 {
-
 }
 
 /*
