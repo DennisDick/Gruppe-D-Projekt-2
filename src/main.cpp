@@ -36,6 +36,7 @@ auto main() -> int
     for (auto &itr_developer : vector_developer)
     {
         itr_developer->solve_problem();
+        std::cout << std::endl;
     }
 
     return 0;
