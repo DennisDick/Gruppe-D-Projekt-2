@@ -55,12 +55,20 @@ auto operator<<(std::ostream& out, Developer& developer) -> std::ostream&
     return out;
 }
 
+/*
+    - initializing the virtual void function for JuniorDeveloper
+    - using 'this' in the method as it is a pointer pointing on the JuniorDeveloper class in this scope
+*/
 void JuniorDeveloper::solve_problem()
 {
     std::cout << *this << "I am a junior developer and i am solving a problem" << std::endl;
     this->drink_coffee();
 }
 
+/*
+    - initializing the virtual void function for SeniorDeveloper
+    - using 'this' in the method as it is a pointer pointing on the SeniorDeveloper class in this scope
+*/
 void SeniorDeveloper::solve_problem()
 {
     std::cout << *this << "I am a senior developer and i am solving a problem" << std::endl;

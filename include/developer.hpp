@@ -16,7 +16,7 @@ class Developer
     explicit Developer(std::string, std::string);
 
     /*
-        static function can not be changed, it is only used for output
+        static function which can not be changed, it is only used for output
     */
     static void drink_coffee();
 
@@ -36,12 +36,12 @@ class JuniorDeveloper : public Developer
 {
    public:
     /*
-         building constructor of JuniorDeveloper and securing that no implicit cast is possible in the initialization
+        building constructor of JuniorDeveloper and securing that no implicit cast is possible in the initialization
     */
     explicit JuniorDeveloper(std::string, std::string);
 
     /*
-        initializing the virtual method from parent class
+        implementing the virtual method from parent class
     */
     void solve_problem() override;
 };
@@ -53,12 +53,12 @@ class SeniorDeveloper : public Developer
 {
    public:
     /*
-         building constructor of SeniorDeveloper and securing that no implicit cast is possible in the initialization
+        building constructor of SeniorDeveloper and securing that no implicit cast is possible in the initialization
     */
     explicit SeniorDeveloper(std::string, std::string);
 
     /*
-        initializing the virtual method from parent class
+        implementing the virtual method from parent class
     */
     void solve_problem() override;
 };
