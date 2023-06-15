@@ -16,7 +16,7 @@ class DeveloperTest : public ::testing::Test
     std::string test_senior_alias = "Test Senior alias";
 
     /*
-        initialzing to test developer with their respective constructor
+        initializing to test developer with their respective constructor
     */
     JuniorDeveloper test_junior_developer_ = JuniorDeveloper(test_junior_name, test_junior_alias);
     SeniorDeveloper test_senior_developer_ = SeniorDeveloper("Test Senior name", "Test Senior alias");
